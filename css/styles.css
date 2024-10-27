@@ -5,12 +5,43 @@ body {
 }
 ul {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin-top: 0;
+   margin-bottom: 0;
 }
 a {
     text-decoration: none;
 }
-/*----------------------------------------header----------------------------------------*/
+.container {
+    width: 1158;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    
 
+
+}
+/*----------------------------------------header----------------------------------------*/
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.header-container {
+    display: flex;
+}
+.navigation {
+    display: flex;
+}
 .header-logo {
 font-family: "Raleway", sans-serif;
 font-weight: 700;
@@ -19,6 +50,7 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color:  #4d5ae5;
+margin-right: 76px;
 }
 .header-logo-roman {
     font-family: "Raleway", sans-serif;;
@@ -28,6 +60,10 @@ color:  #4d5ae5;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2e2f42;;
+}
+.header-menu-list {
+    display: flex;
+    gap: 40px;
 }
 .header-menu-link {
     font-weight: 500;
@@ -44,8 +80,18 @@ color:  #4d5ae5;
 }
 .header-address {
     font-style: none;
-    font-style: normal 
+    font-style: normal;
+    display: flex;
+    margin-left: auto;
 }
+
+.header-contacts-list {
+  display: flex; 
+  gap: 40px;
+   
+   
+}
+    
 .header-contacts-link {
     font-weight: 400;
     font-size: 16px;
@@ -63,15 +109,23 @@ color:  #4d5ae5;
 /*------------------------------------header-----------------------------------*/
 .hiro {
     background: #2e2f42;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
-.hiro-subtitle {
+.hiro-title {
 font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
+margin-bottom: 48px;
 text-align: center;
 color: #fff;
+max-width: 496px;
+margin-left: 472px;
+
+
 }
+
  .hiro-btn {
     font-weight: 500;
     font-size: 16px;
@@ -80,8 +134,11 @@ color: #fff;
     cursor: pointer;
     background-color:  #4d5ae5;
     color: #fff;
-    
+    padding: 16px,32px; 
+    display: block;
+    margin: 0 auto;
 }
+
 .hiro-btn:hover{
     background:  #404BBF;
     color: #fff;
@@ -91,16 +148,30 @@ color: #fff;
     color: #fff;
 }
 /*----------------------------------hiro-------------------------------------*/
+.features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+} 
 
-/*.features-item {
-    
-}*/
+ .features-list {
+    display: flex;
+    gap: 24px;  
+ } 
+ .features-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+ }
+ 
+ 
+
 .features-subtitle {
    font-weight: 500;
    font-size: 20px;
    line-height: 1.2;
    letter-spacing: 0.02em;
    color: #2e2f42;
+   margin-bottom: 8px;
+  
+   
 }
 .features-item-text {
     font-weight: 400;
@@ -112,9 +183,17 @@ color: #fff;
 /*--------------------------------------features-------------------------------------*/
 .team {
    background:  #f4f4fd; 
+   padding-top: 120px;
+   padding-bottom: 120px;
+   
+}
+.team-list {
+    display: flex;
+   gap: 24px;
+   
 }
 .team-item {
-    background-color: #FFFFFF;
+   
 }
 .team-subtitle-team {
 font-weight: 700;
@@ -124,9 +203,16 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 text-align: center;
 color: #2e2f42;
+padding-bottom: 120px;
+max-width: 162px;
+margin: 0 auto;
+
+
+
 }
 .team-avatar {
-background: url("path_to_image"); 
+    background: url("path_to_image"); 
+    padding-bottom: 32px;
 }
 .team-subtitle {
     font-weight: 500;
@@ -135,6 +221,7 @@ background: url("path_to_image");
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .team-item-text {
     font-weight: 400;
@@ -143,11 +230,22 @@ background: url("path_to_image");
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    
 }
 /*---------------------------------------team------------------------------------*/
-
+.portfolio {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 .portfolio-item {
     background: #fff;
+    
+   
 }
 .portfolio-subtitle-portfolio{
 font-weight: 700;
@@ -157,9 +255,13 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 text-align: center;
 color: #2e2f42;
+padding-bottom: 72px;
+
+
 }
 .portfolio-product-image {
 background: url("path_to_image");
+
 }
 .portfolio-subtitle {
     font-weight: 500;
@@ -167,6 +269,7 @@ background: url("path_to_image");
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .portfolio-item-text {
     font-weight: 400;
@@ -178,6 +281,8 @@ background: url("path_to_image");
 /*-------------------------------------------Porfolio----------------------------------*/
 .footer {
     background: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .footer-logo {
 font-family: "Raleway", sans-serif;
@@ -187,6 +292,9 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color:  #4d5ae5;
+
+
+
 }
 .footer-logo-roman {
     color: #f4f4fd
@@ -197,5 +305,7 @@ color:  #4d5ae5;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    margin-bottom: 16px;
+    
 }
 /*----------------------------------------footer---------------------------------*/
