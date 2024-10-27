@@ -22,8 +22,11 @@ p {
 a {
     text-decoration: none;
 }
+img {
+    display: block;
+}
 .container {
-    width: 1158;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -33,14 +36,16 @@ a {
 }
 /*----------------------------------------header----------------------------------------*/
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
+    border-bottom: 1px solid #e7e9fc 
 }
 .header-container {
     display: flex;
+    align-items: center;
 }
 .navigation {
     display: flex;
+    align-items: center;
 }
 .header-logo {
 font-family: "Raleway", sans-serif;
@@ -71,6 +76,8 @@ margin-right: 76px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
+    display: block;
 } 
 .header-menu-link:hover {
     color: #404bbf;
@@ -109,8 +116,8 @@ margin-right: 76px;
 /*------------------------------------header-----------------------------------*/
 .hiro {
     background: #2e2f42;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 .hiro-title {
 font-weight: 700;
@@ -121,7 +128,8 @@ margin-bottom: 48px;
 text-align: center;
 color: #fff;
 max-width: 496px;
-margin-left: 472px;
+margin-right: auto;
+margin-left: auto;
 
 
 }
@@ -137,6 +145,8 @@ margin-left: 472px;
     padding: 16px,32px; 
     display: block;
     margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
 }
 
 .hiro-btn:hover{
@@ -204,12 +214,13 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 text-align: center;
 color: #2e2f42;
-padding-bottom: 120px;
-max-width: 162px;
-margin: 0 auto;
+margin-bottom: 72px;
 
 
 
+}
+.container-team {
+    padding: 32px 0;
 }
 .team-avatar {
     background: url("path_to_image"); 
@@ -248,9 +259,7 @@ margin: 0 auto;
 .portfolio-item {
     background: #fff;
     flex-basis: calc((100% - 3 * 24px) / 3);
-    border-radius:  0px 0px 4px 4px;
-    
-    
+    border-radius:  0px 0px 4px 4px; 
     
    
 }
@@ -269,6 +278,9 @@ margin-bottom: 72px;
 
 
 
+}
+.container-portfolio {
+    padding: 32px 16px;
 }
 .portfolio-product-image {
 background: url("path_to_image");
@@ -312,6 +324,8 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color:  #4d5ae5;
+display: inline-block;
+margin-bottom: 16px;
 
 
 
@@ -325,7 +339,7 @@ color:  #4d5ae5;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin-bottom: 16px;
+    max-width: 264px;
     
 }
 /*----------------------------------------footer---------------------------------*/
